@@ -56,8 +56,9 @@
 	]
 	let randomNumber = Math.floor(Math.random() * quotesArray.length) //generates a random number between 0 and 7 which will be used to select a quote
 
-	document.getElementById('press-quote').textContent = quotesArray[randomNumber] //changes the quote
-
+	document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '' //changes the quote
+	
+	console.log(quotesArray[randomNumber].split(' — ')[0] )
 
 </script>
 
